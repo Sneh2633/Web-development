@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="TravelStyle.css" />
+    <title>Travel Landing Page</title>
+  </head>
+  <body>
+    <section class="showcase active">
+      <header>
+        <img
+          class="image"
+          src="Travel images/explore.png"
+          alt="picture of travel logo"
+          height="50"
+          width="60"
+        />
+        <h2 class="logo">Travel</h2>
+        <div class="toggle active"></div>
+      </header>
+
+      <video src="Travel images/travel video.mp4 " muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Exploring The World</h3>
+        <p>
+          The voice of the sea speaks to the soul.The touch of the sea is
+          sensuous,enfolding the body in its soft,close embrace.
+        </p>
+        <a href="#">Explore</a>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/"
+            ><img src="Travel images/facebook-logo.png" height="40" width="40"
+          /></a>
+        </li>
+        <li></li>
+        <li>
+          <a href="https://www.twitter.com/"
+            ><img
+              src="https://i.ibb.co/Wnxq2Nq/twitter.png"
+              height="40"
+              width="40"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/snehal_bhogawade_patil/"
+            ><img src="Travel images/insta.png" height="40" width="40"
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
